@@ -3,23 +3,84 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #1096B5;
   --foreground: #171717;
+  --header-background: #093244;
+  --header-color: #ffffff;
+  --body-background: #1096B5;
+  --project-item-background: #1A4B6A;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --body-background: #09728A;
   }
+}
+
+body header {
+  background-color: var(--header-background);
+  color: var(--header-color);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--body-background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+div .project-item{
+  margin-right: 3%;
+  margin-left: 3%
+}
+
+/* Project List styles */
+.project-list {
+  padding: 20px;
+  background-color: var(--background-light);
+  border-radius: 8px;
+  margin: 5%;
+}
+
+/* Project Item styles */
+.project-item {
+  padding: 20px;
+  background-color: var(--project-item-background);
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.project-description {
+  color: #f0f0f0;
+}
+
+.project-tags {
+  margin-top: 10px;
+}
+
+.project-tag {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+ 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
