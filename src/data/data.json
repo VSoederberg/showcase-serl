@@ -1,5 +1,6 @@
 [
 {
+	"id": "1",
 	"title": "CRedit Maker",
 	"description": "CRedit Maker helps you to create CRedit (Contribution Roles Taxanomy) statements for youe research papers. To learn more visit the CRedit website.", 
 	"tags": [
@@ -7,10 +8,11 @@
 		"Research",
 		"Next.js"
 	],
-	"thumbnailUrl": "https://github.com/andreas-bauer/credit-maker/blob/main/screenshot.png",
+	"thumbnailUrl": "https://raw.githubusercontent.com/andreas-bauer/credit-maker/refs/heads/main/screenshot.png",
 	"projectHomeUrl": "https://github.com/andreas-bauer/credit-maker/tree/main"
 },
 {
+    "id": "2",
 	"title": "Rejoinderoo",
     "description": "Rejoinderoo creates rejoinder (response to reviewers) LaTeX document based on a CSV file. An example of a generated rejoinder document is shown in exampple.pdf",
     "tags": [
@@ -18,10 +20,11 @@
         "Research",
         "TeX"
     ],
-    "thumbnailUrl": "https://github.com/andreas-bauer/rejoinderoo/blob/main/images/logo.png ",
+    "thumbnailUrl": "https://raw.githubusercontent.com/andreas-bauer/rejoinderoo/refs/heads/main/images/logo.png",
     "projectHomeUrl": "https://github.com/andreas-bauer/rejoinderoo"
 },
 {
+	"id": "3",
 	"title": "Pokédex",
 	"description": "Pokedéx application developed in Flutter.",
 	"tags": [
@@ -30,7 +33,7 @@
 		"Swift",
 		"Ruby"
 	],
-	"thumbnailUrl": "https://github.com/bth-dipt-teaching/pokedex/blob/main/assets/screenshots/dark/1.png",
+	"thumbnailUrl": "https://raw.githubusercontent.com/bth-dipt-teaching/pokedex/refs/heads/main/assets/screenshots/dark/1.png",
 	"projectHomeUrl": "https://github.com/bth-dipt-teaching/pokedex"
 }
 ]

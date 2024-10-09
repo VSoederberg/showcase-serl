@@ -1,34 +1,28 @@
 import React from 'react';
+import { DataItem } from '../utils/dataTypes';
 import Project from './Project';
 
-interface ProjectData {
-  title: string;
-  description: string;
-  tags: string[];
-  thumbnailUrl: string;
-  projectHomeUrl: string;
-}
-
 interface ProjectListProps {
-  projects: ProjectData[];
+  projects: DataItem[]; // Expecting a list of projects as a prop
 }
 
 const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
   return (
-    <ul className="projectList">
-      {projects.map((project, index) => (
+    <ul>
+      {projects.map((project) => (
         <Project
-          key={index} // Using index as a key
-          id={index + 1} //Create a simple incrementing ID
-          title={project.title}
-          description={project.description}
-          tags={project.tags}
-          thumbnailUrl={project.thumbnailUrl}
-          projectHomeUrl={project.projectHomeUrl}
-        />
+           key={project.id}
+           id={project.id}
+           title={project.title}
+           description={project.description}
+           tags = {project.tags}
+           thumbnailUrl={project.thumbnailUrl} 
+           projectHomeUrl={project.projectHomeUrl} 
+         />
       ))}
     </ul>
   );
 };
 
-export default ProjectList; 
+export default ProjectList;
+

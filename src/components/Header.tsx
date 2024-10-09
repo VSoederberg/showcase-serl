@@ -13,9 +13,6 @@ const Header = () => {
         </div>
 		{/* Navigation Links */}
 		<nav className="space-x-4">
-		  <Link href="/overview">
-			Overview
-		  </Link>
 		  <Link href="/projects">
             Projects
           </Link>

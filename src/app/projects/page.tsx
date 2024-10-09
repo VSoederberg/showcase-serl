@@ -1,48 +1,47 @@
-'use client'; 
-
+'use client'
 import React, { useEffect, useState } from 'react';
-import ProjectList from '../../components/ProjectList';
+import { fetchProjects } from '../../utils/api';
+import { DataItem } from '../../utils/dataTypes';
+import ProjectList from '../../components/ProjectList'; // Import your ProjectList component
 
-
-export default function Page() {
-  const [projectList, setProjectList] = useState<any[]>([]);
-  const [loading, setLoading] = useState<boolean>(true); // To manage loading state
-
-  const fetchData = async () => {
-    setLoading(true);
-    try {
-      const res = await fetch('http://localhost:3000/data.txt');
-      if(!res.ok) {
-        throw new Error('Failed to fetch data');
-      }
-      const text = await res.text();
-      const projects = JSON.parse(text);
-      setProjectList(projects)
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setLoading(false);
-    }
-  };
+const ProjectsPage: React.FC = () => {
+  const [projects, setProjects] = useState<DataItem[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetchData();
+    const loadProjects = async () => {
+      try {
+        const data = await fetchProjects();
+        setProjects(data);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Something went wrong');
+      } finally {
+        setLoading(false); // Set loading to false regardless of success or failure
+      }
+    };
 
-    const intervalId = setInterval(() => {
-      fetchData(); // Fetch data every 5 minutes (300000 ms)
-    }, 300000);
-
-    return () => clearInterval(intervalId); // Cleanup on unmount
+    loadProjects();
   }, []);
 
+  // Render loading state
   if (loading) {
-    return <div>Loading...</div>; // Optional loading state
+    return <div>Loading...</div>;
   }
 
+  // Render error state
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  // Render project list if data is fetched successfully
   return (
     <div>
-      <h1>Projects List</h1>
-      <ProjectList projects={projectList}/>
+      <h1>Projects</h1>
+      <ProjectList projects={projects} /> {/* Pass projects to your ProjectList component */}
     </div>
   );
 };
+
+export default ProjectsPage;
+
