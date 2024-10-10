@@ -26,7 +26,7 @@ const Project: React.FC<ProjectProps> = ({
       </Link>
 
       <div className="flex flex-col md:flex-row items-start mt-2"> {/* Flex container for image and description */}
-        <div className="relative w-full md:w-1/3 h-48 md:max-w-xs overflow-hidden"> {/* Image container */}
+        <div className="relative w-full md:w-1/3 h-48 md:max-w-xs min-w-[200px] overflow-hidden"> {/* Image container */}
           <Image
             src={thumbnailUrl}
             alt={`Thumbnail for ${title}`}

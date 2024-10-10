@@ -8,19 +8,19 @@ interface ProjectListProps {
 
 const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
   return (
-    <ul>
+    <div className='w-11/12 m-auto md:grid mt-10 gap-10 md:grid-cols-2 flex flex-col'>
       {projects.map((project) => (
-        <Project
-           key={project.id}
-           id={project.id}
+        <Project key={project.id} {...project}
+         /*  id={project.id}
            title={project.title}
            description={project.description}
            tags = {project.tags}
            thumbnailUrl={project.thumbnailUrl} 
-           projectHomeUrl={project.projectHomeUrl} 
+           projectHomeUrl={project.projectHomeUrl}
+         */ 
          />
       ))}
-    </ul>
+    </div>
   );
 };
 
