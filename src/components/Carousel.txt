@@ -1,0 +1,54 @@
+import { useRef } from 'react';
+import Project from './Project'; // Assuming you have a Project component
+
+const Carousel: React.FC<{ projects: DataItem[] }> = ({ projects }) => {
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <div className="relative">
+      {/* Carousel Container */}
+      <div
+        ref={carouselRef}
+        className="carousel-items flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4"
+      >
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="carousel-item min-w-[300px] flex-shrink-0 snap-center bg-white rounded-lg shadow-md p-4"
+          >
+            <Project {...project} />
+          </div>
+        ))}
+      </div>
+
+      {/* Left and Right Buttons */}
+      <button
+        onClick={scrollLeft}
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+      >
+        ‹
+      </button>
+      <button
+        onClick={scrollRight}
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+      >
+        ›
+      </button>
+    </div>
+  );
+};
+
+export default Carousel;
+

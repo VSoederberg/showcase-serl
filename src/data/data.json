@@ -9,7 +9,8 @@
 		"Next.js"
 	],
 	"thumbnailUrl": "https://raw.githubusercontent.com/andreas-bauer/credit-maker/refs/heads/main/screenshot.png",
-	"projectHomeUrl": "https://github.com/andreas-bauer/credit-maker/tree/main"
+	"projectHomeUrl": "https://github.com/andreas-bauer/credit-maker/tree/main",
+    "dateAdded": "2024-09-26"
 },
 {
     "id": "2",
@@ -21,7 +22,8 @@
         "TeX"
     ],
     "thumbnailUrl": "https://raw.githubusercontent.com/andreas-bauer/rejoinderoo/refs/heads/main/images/logo.png",
-    "projectHomeUrl": "https://github.com/andreas-bauer/rejoinderoo"
+    "projectHomeUrl": "https://github.com/andreas-bauer/rejoinderoo",
+    "dateAdded": "2024-09-26"
 },
 {
 	"id": "3",
@@ -34,6 +36,7 @@
 		"Ruby"
 	],
 	"thumbnailUrl": "https://raw.githubusercontent.com/bth-dipt-teaching/pokedex/refs/heads/main/assets/screenshots/dark/1.png",
-	"projectHomeUrl": "https://github.com/bth-dipt-teaching/pokedex"
+	"projectHomeUrl": "https://github.com/bth-dipt-teaching/pokedex",
+    "dateAdded": "2024-09-26"
 }
 ]
