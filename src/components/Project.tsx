@@ -34,7 +34,7 @@ const Project: React.FC<ProjectProps> = ({
             style={{ objectFit: 'contain' }} // Directly use style for objectFit
             className="rounded-lg transition-transform duration-300 transform hover:scale-105"
             onError={(e) => {
-              e.currentTarget.src = '/path/to/placeholder-image.png'; // Fallback on error
+              e.currentTarget.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/640px-No-Image-Placeholder.svg.png'; // Fallback on error
             }}
           />
         </div>

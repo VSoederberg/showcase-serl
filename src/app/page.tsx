@@ -37,7 +37,7 @@ const HomePage: React.FC = () => {
       <h1 className="text-3xl font-bold mb-4">Recent Projects</h1>
       {/* Only render the carousel if projects exist */}
       {projects.length > 0 ? (
-        <Carousel projects={projects} />
+        <Carousel projects={projects.slice(0, 5)} />
       ) : (
         <div>No projects available</div>
       )}

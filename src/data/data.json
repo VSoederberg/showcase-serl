@@ -38,5 +38,63 @@
 	"thumbnailUrl": "https://raw.githubusercontent.com/bth-dipt-teaching/pokedex/refs/heads/main/assets/screenshots/dark/1.png",
 	"projectHomeUrl": "https://github.com/bth-dipt-teaching/pokedex",
     "dateAdded": "2024-09-26"
+},
+{
+    "id": "4",
+    "title": "Huly Platform",
+    "description": "The Huly Platform is a robust framework designed to accelerate the development of business applications, such as CRM systems. This repository includes several applications, such as Chat, Project Management, CRM, HRM, and ATS. Various teams are building products on top of the Platform, including Huly and TraceX.",
+    "tags": [
+        "TypeScript",
+        "Svelte",
+        "SCSS",
+        "JavaScript",
+        "Shell"
+    ],
+    "thumbnailUrl": "https://repository-images.githubusercontent.com/392073243/6d27d5cc-38cd-4d88-affe-bb88b393180c",
+    "projectHomeUrl": "https://github.com/hcengineering/platform?tab=readme-ov-file",
+    "dateAdded": "2024-10-06"
+},
+{
+    "id": "5",
+    "title": "Amnezia Client",
+    "description": "Amnezia is an open-source VPN client, with a key feauture that enables you to deploy your own VPN server on your server. Very easy to use - enter your IP address, SSH login, password and Amnezia will automatically install VPN docker containers to your server and connect to the VPN. Classic VPN-protocols: OpenVPN, WireGuard and IKEv2 protocols. Protocols with traffic Masking (Obfuscation): OpenVPN over Cloak plugin, Shadowsocks (OpenVPN over Shadowsocks), AmneziaWG and XRay. Split tunneling support - add any sites to the client to enable VPN only for them or add Apps (only for Android and Desktop). Windows, MacOS, Linux, Android, iOS releases. Support for AmneziaWG protocol configuration on Keenetic beta firmware.",
+    "tags": [
+        "C++",
+        "QML",
+        "Kotlin",
+        "Java",
+        "Shell"
+    ],
+    "thumbnailUrl": "https://raw.githubusercontent.com/amnezia-vpn/amnezia-client/refs/heads/dev/metadata/img-readme/uipic4.png",
+    "projectHomeUrl": "https://github.com/amnezia-vpn/amnezia-client",
+    "dateAdded": "2024-10-09"
+},
+{
+    "id": "6",
+    "title": "LamaStack",
+    "description": "This repository contains the Llama Stack API specifications as well as API Providers and Llama Stack Distributions.\n\nThe Llama Stack defines and standardizes the building blocks needed to bring generative AI applications to market. These blocks span the entire development lifecycle: from model training and fine-tuning, through product evaluation, to building and running AI agents in production. Beyond definition, we are building providers for the Llama Stack APIs. These were developing open-source versions and partnering with providers, ensuring developers can assemble AI solutions using consistent, interlocking pieces across platforms. The ultimate goal is to accelerate innovation in the AI space.\n\nThe Stack APIs are rapidly improving, but still very much work in progress and we invite feedback as well as direct contributions.",
+    "tags": [
+        "Python",
+        "Swift",
+        "Shell"
+    ],
+    "thumbnailUrl": "https://private-user-images.githubusercontent.com/6599399/375508848-2fedfe0f-6df7-4441-98b2-87a1fd95ee1c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjg2MjE5NzEsIm5iZiI6MTcyODYyMTY3MSwicGF0aCI6Ii82NTk5Mzk5LzM3NTUwODg0OC0yZmVkZmUwZi02ZGY3LTQ0NDEtOThiMi04N2ExZmQ5NWVlMWMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MTAxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDEwMTFUMDQ0MTExWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTY2OGU4ZjkzOGY5NTUzMGRhMGE4MWVjOTA3Nzc0ZWI0YjVlMDdkM2QyOTNhN2U5ZTE1ZWNlMjJhNjU3NGJlYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Chv2CA00gAabtvVMQOaeY0e6JrutLBXcteq5kjtgVpY",
+    "projectHomeUrl": "dhttps://github.com/meta-llama/llama-stack",
+    "dateAdded": "2024-10-07"
+},
+{
+    "id": "7",
+    "title": "GPT Pilot",
+    "description": "GPT Pilot aims to research how much LLMs can be utilized to generate fully working, production-ready apps while the developer oversees the implementation.\n\nThe main idea is that AI can write most of the code for an app (maybe 95%), but for the rest, 5%, a developer is and will be needed until we get full AGI.",
+    "tags": [
+        "Python",
+        "Research",
+        "JavaScript",
+        "EJS",
+        "Smarty"
+    ],
+    "thumbnailUrl": "",
+    "projectHomeUrl": "https://github.com/Pythagora-io/gpt-pilot",
+    "dateAdded": "2024-10-02"
 }
 ]
