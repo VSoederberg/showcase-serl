@@ -3,6 +3,7 @@ export interface DataItem {
   title: string;
   description: string;
   tags: string[];
+  type: string;
   thumbnailUrl: string;
   projectHomeUrl: string;
 }

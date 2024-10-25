@@ -5,9 +5,9 @@
 	"description": "CRedit Maker helps you to create CRedit (Contribution Roles Taxanomy) statements for youe research papers. To learn more visit the CRedit website.", 
 	"tags": [
 		"TypeScript",
-		"Research",
 		"Next.js"
 	],
+    "type": "Research",
 	"thumbnailUrl": "https://raw.githubusercontent.com/andreas-bauer/credit-maker/refs/heads/main/screenshot.png",
 	"projectHomeUrl": "https://github.com/andreas-bauer/credit-maker/tree/main",
     "dateAdded": "2024-09-26"
@@ -18,9 +18,9 @@
     "description": "Rejoinderoo creates rejoinder (response to reviewers) LaTeX document based on a CSV file. An example of a generated rejoinder document is shown in exampple.pdf",
     "tags": [
         "Python",
-        "Research",
         "TeX"
     ],
+    "type": "Research",
     "thumbnailUrl": "https://raw.githubusercontent.com/andreas-bauer/rejoinderoo/refs/heads/main/images/logo.png",
     "projectHomeUrl": "https://github.com/andreas-bauer/rejoinderoo",
     "dateAdded": "2024-09-26"
@@ -31,10 +31,10 @@
 	"description": "Pokedéx application developed in Flutter.",
 	"tags": [
 		"Flutter",
-		"Dart",
 		"Swift",
 		"Ruby"
 	],
+    "type": "Student",
 	"thumbnailUrl": "https://raw.githubusercontent.com/bth-dipt-teaching/pokedex/refs/heads/main/assets/screenshots/dark/1.png",
 	"projectHomeUrl": "https://github.com/bth-dipt-teaching/pokedex",
     "dateAdded": "2024-09-26"
@@ -46,10 +46,10 @@
     "tags": [
         "TypeScript",
         "Svelte",
-        "SCSS",
         "JavaScript",
         "Shell"
     ],
+    "type": "Research",
     "thumbnailUrl": "https://repository-images.githubusercontent.com/392073243/6d27d5cc-38cd-4d88-affe-bb88b393180c",
     "projectHomeUrl": "https://github.com/hcengineering/platform?tab=readme-ov-file",
     "dateAdded": "2024-10-06"
@@ -61,7 +61,6 @@
     "tags": [
         "C++",
         "QML",
-        "Kotlin",
         "Java",
         "Shell"
     ],

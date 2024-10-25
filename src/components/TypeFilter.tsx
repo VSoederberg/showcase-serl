@@ -1,22 +1,22 @@
 import { useState } from 'react';
 import { Listbox } from '@headlessui/react';
 
-interface Tag {
+interface Type {
   name: string;
   selected: boolean;
 }
 
-interface TagFilterProps {
-  tags: Tag[];
-  onChange: (selectedTags: Tag[]) => void;
+interface TypeFilterProps {
+  types: Type[];
+  onChange: (selectedTags: Type[]) => void;
 }
 
-const TagFilter: React.FC<TagFilterProps> = ({ tags, onChange }) => {
-  const handleTagChange = (tag: Tag) => {
-    const updatedTags = tags.map(t =>
-      t.name === tag.name ? { ...t, selected: !t.selected } : t
+const TypeFilter: React.FC<TypeFilterProps> = ({ types, onChange }) => {
+  const handleTypeChange = (type: Type) => {
+    const updatedTypes = types.map(t =>
+      t.name === type.name ? { ...t, selected: !t.selected } : t
     );
-    onChange(updatedTags);
+    onChange(updatedTypes);
   };
 
   return (
@@ -26,7 +26,7 @@ const TagFilter: React.FC<TagFilterProps> = ({ tags, onChange }) => {
           <>
             <div className="w-56">
               <Listbox.Button className="flex justify-between items-center block w-full h-10 bg-white text-gray-700 border border-gray-300 rounded-md shadow-sm focus:outline-none mr-2">
-                <span>Select Tags</span>
+                <span>Select Types</span>
                 {/* Downward arrow icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -47,23 +47,23 @@ const TagFilter: React.FC<TagFilterProps> = ({ tags, onChange }) => {
                 open ? 'block' : 'hidden'
               }`}
             >
-              {tags.map(tag => (
+              {types.map(type => (
                 <Listbox.Option
-                  key={tag.name}
-                  value={tag}
+                  key={type.name}
+                  value={type}
                   className={`cursor-default select-none relative p-2 ${
-                    tag.selected ? 'bg-blue-500 text-white' : 'text-gray-900'
+                    type.selected ? 'bg-blue-500 text-white' : 'text-gray-900'
                   }`}
-                  onClick={() => handleTagChange(tag)}
+                  onClick={() => handleTypeChange(type)}
                 >
                   <div className="flex items-center">
                     <input
                       type="checkbox"
-                      checked={tag.selected}
-                      onChange={() => handleTagChange(tag)} // Fixed typo from `onCharge` to `onChange`
+                      checked={type.selected}
+                      onChange={() => handleTypeChange(type)}
                       className="mr-2"
                     />
-                    <span>{tag.name}</span>
+                    <label>{type.name}</label>
                   </div>
                 </Listbox.Option>
               ))}
@@ -75,5 +75,5 @@ const TagFilter: React.FC<TagFilterProps> = ({ tags, onChange }) => {
   );
 };
 
-export default TagFilter;
+export default TypeFilter;
 

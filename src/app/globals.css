@@ -13,7 +13,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #172554;
+    --background: #3b82f6;
     --foreground: #ededed;
     --body-background: #09728A;
   }
@@ -29,7 +29,7 @@ body header {
 
 body {
   color: var(--foreground);
-  background: var(--body-background);
+  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
 }
@@ -76,6 +76,8 @@ div .image-wrapper {
 .project-description {
   color: #f0f0f0;
   text-align: justify;
+  min-width: fit-content(50em);
+  white-space: break-spaces;
 }
 
 .project-thumbnail {
