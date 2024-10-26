@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: #1096B5;
+  --background: #1096b5;
   --foreground: #171717;
   --header-background: #093244;
   --header-color: #ffffff;
-  --body-background: #1096B5;
-  --project-item-background: #1A4B6A;
+  --body-background: #1096b5;
+  --project-item-background: #1a4b6a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #3b82f6;
     --foreground: #ededed;
-    --body-background: #09728A;
+    --body-background: #09728a;
   }
 }
 
@@ -36,7 +36,7 @@ body {
 
 div .project-item {
   margin-right: 3%;
-  margin-left: 3%
+  margin-left: 3%;
 }
 
 div .image-wrapper {
@@ -96,7 +96,15 @@ div .image-wrapper {
   border-radius: 20px;
   margin-right: 5px;
 }
- 
+
+.tag-filter {
+  margin-right: 2px;
+}
+
+.type-filter {
+  margin-right: 2px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
